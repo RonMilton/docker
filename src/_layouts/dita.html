@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>{{ page.title }}</title>
+</head>
+<body>
+<article>
+    {% unless content contains "<h1" or content contains "<h2" or content contains "<h3" %}
+        <h2>{{page.title}}</h2>
+    {% endunless %}
+    {{ content }}
+</article>
+</body>
+</html>

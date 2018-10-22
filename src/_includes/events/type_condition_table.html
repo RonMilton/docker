@@ -1,0 +1,15 @@
+{% assign array = {{include.actions | split: ";"}} %}
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Condition</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% tablerow ray in array cols:2 %}
+            {{ ray}}
+        {% endtablerow %}
+    </tbody>
+</table>
+
