@@ -4,4 +4,4 @@ _pdf
 .jekyll-metadata
 build
 dist
-
+.DS_Store
