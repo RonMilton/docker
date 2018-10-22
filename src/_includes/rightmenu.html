@@ -1,0 +1,17 @@
+{%- if page.url contains '/functions/' -%}
+  <div id="function-menu-wrapper" class="sticky-top">
+    <h1 class="dsmenuh1">Function List</h1>
+    <ul id="function-menu" data-bind="foreach: ftypes">
+        <li class="sectionli"><i class="far fa-eye" data-bind="click: togglevis"></i> | <a data-bind="attr: { href:id }, text: name, click: togglesubs"></a>
+            <ul class="d-none submenu" data-bind="foreach: functions">
+                <li class="functionli" data-bind="if: ftype == $parent.ftype"><a data-bind="attr: { href:id }, text: name"></a></li>
+            </ul>
+        </li>
+    </ul>
+    <input type="text" placeholder="Search functions..." data-bind="typeahead: functions, value: selected"/>
+  </div>
+{%- else -%}
+<div id="prjrightnav" class="dsmenuwrapper sticky-top" role='navigation'>
+  <h1 class="dsmenuh1"></h1>
+</div>
+{%- endif -%}

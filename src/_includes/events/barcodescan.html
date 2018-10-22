@@ -1,0 +1,39 @@
+<p>The Bar Code Scan event will read a scan from onboard or attached hardware and automatically display matching records. If the configuration does not define the currently selected field as scannable, the process inserts the scanned value into the field.</p>
+
+<p class="subtitle">Event Actions</p>
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Condition</th>
+            <th>Ignore Error</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Execute Command</td>
+            <td>true</td>
+            <td>false (not checked)</td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="subtitle">Action Details</p>
+<table>
+    <thead>
+        <tr>
+            <th>CommandType</th>
+            <th>Disposition</th>
+            <th>ResetContext</th>
+            <th>Command</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ViewAction</td>
+            <td>Local</td>
+            <td>false (not checked)</td>
+            <td>{{ include.command | default: "Scan Search" }}</td>
+        </tr>
+    </tbody>
+</table>
