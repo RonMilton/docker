@@ -16,11 +16,8 @@ RUN apt-get update \
     && rm dita-ot-${OT_VERSION}.zip \
     && mv dita-ot-${OT_VERSION}/* . \
     && rmdir dita-ot-${OT_VERSION} \
-    && chmod -R a+w $DITA_HOME \
-    -v $(pwd):/var/code \
-    -a stdout \
-    -i \
-    --rm \
-    --workdir /var/code \
-    --entrypoint /var/code/scripts/print_project.sh \
-    project/agent /var/code/scripts/print_project.sh
+    && chmod -R a+w $DITA_HOME
+
+COPY . /var/code/
+
+ENTRYPOINT [ "/var/code/scripts/print_project.sh" ]
