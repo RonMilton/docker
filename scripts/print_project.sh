@@ -2,14 +2,14 @@
 export JEKYLL_ENV=production
 
 echo "Installing dita-ot plugins..."
-cp -R ./dita/plugins/* /tmp/dita-ot/plugins
+cp -R /var/code/dita/plugins/* /tmp/dita-ot/plugins
 dita --install
 
 echo "Installing Ruby dependencies..."
 gem install jekyll bundler --no-ri --no-rdoc
 
 echo "Generating project website..."
-cd src
+cd /var/code/src/
 bundle install --path ../build/vendor/bundle
 
 echo "Generating PDF maps..."

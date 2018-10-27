@@ -5,3 +5,7 @@ _pdf
 build
 dist
 .DS_Store
+node_modules
+*.pem
+pubagent
+pub_project.sh
