@@ -1,0 +1,8 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+  {% for item in page.val %}
+    <prop action="{{ item.prop.action }}" att="{{ item.prop.attribute }}" val="{{ item.prop.value }}"/>
+  {% endfor %}
+</val>

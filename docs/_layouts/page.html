@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="post">
+    {%- assign titlefrag = content | split: "</h" | first -%}
+    {%- assign headingcheck = titlefrag | truncate: 2, "" -%}
+    <header class="post-header">
+    {%- unless headingcheck == "<h" -%}
+      <h1 class="post-title display-4">{{ page.title | escape }}</h1>
+    {%- else -%}
+      {%- assign strippedtitle = true -%}
+      {%- assign pagetitle = titlefrag | split: ">" | last -%}
+      {%- assign titlelevel = titlefrag | split: ">" | first | remove: "<" | truncatewords: 1, "" -%}
+      {%- case titlelevel -%}
+        {%- when 'h1' -%}
+          <h1 class="post-title display-4">{{pagetitle}}</h1>
+        {%- when 'h2' -%}
+          <h2 class="post-title display-4">{{pagetitle}}</h2>
+        {%- when 'h3' -%}
+          <h3 class="post-title display-4">{{pagetitle}}</h3>
+        {%- else -%}
+          <h1 class="post-title display-4">{{pagetitle}}</h1>
+      {%- endcase -%}
+    {%- endunless -%}
+  </header>
+
+  <div class="post-content">
+      {%- if strippedtitle == true -%}
+        {%- capture strheading -%}
+           {{titlefrag}}</{{titlelevel}}>
+        {%- endcapture -%}
+        {{ content | remove: strheading }}
+      {%- else -%}
+        {{ content }}
+      {%- endif -%}
+  </div>
+
+</article>

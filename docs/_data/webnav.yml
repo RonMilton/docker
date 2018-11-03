@@ -1,0 +1,30 @@
+left_nav_title: Project
+
+main_toc:
+- title: Introduction
+  url: /intro/overview.html
+- title: Print
+  url: /print/overview.html
+- title: Web
+  url: /web/overview.html
+
+left_toc:
+- title: Introduction
+  subitems: 
+     - title: Overview
+       subitems:
+         - title: Overview
+           url: /intro/overview.html
+- title: Print
+  subitems:
+     - title: Overview
+       url: /print/overview.html
+     - title: PDF Builds
+       url: /print/ditamaps/
+     - title: Filtering
+       url: /print/ditavals/
+- title: Web
+  subitems: 
+     - title: Overview
+       url: /web/overview
+- title: separator

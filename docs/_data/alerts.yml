@@ -1,0 +1,7 @@
+---
+note: "<div class='alert alert-info'><i class='fa fa-info-circle' markdown='1'></i> <b>Note:</b> "
+warn: "<div class='alert alert-warning'><i class='fa fa-exclamation-triangle' markdown='1'></i> <b>Warning:</b> "
+tip: "<div class='alert alert-success' markdown='1'><i class='fa fa-check-circle'></i> <b>Tip:</b> "
+webonly: <div audience='webonly' markdown='1'>
+end: </div>
+---
