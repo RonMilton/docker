@@ -9,7 +9,7 @@ echo "Installing Ruby dependencies..."
 gem install jekyll bundler --no-ri --no-rdoc
 
 echo "Generating project website..."
-cd /var/code/src/
+cd /var/code/docs/
 bundle install --path ../build/vendor/bundle
 
 echo "Generating PDF maps..."

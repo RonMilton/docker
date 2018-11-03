@@ -5,7 +5,7 @@
 # cp -R ./project/dita/plugins/* /tmp/dita-ot/plugins/ && dita --install
 
 echo "Installing Ruby dependencies..."
-cd src
+cd docs
 gem install jekyll bundler --no-ri --no-rdoc
 
 echo "Serving Jekyll website..."

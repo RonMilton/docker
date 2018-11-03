@@ -10,5 +10,5 @@ docker run \
 -i \
 --rm \
 --workdir /var/code \
---entrypoint /bin/sh \
-
+--entrypoint /var/code/scripts/print_project.sh \
+project/agent /var/code/scripts/print_project.sh
