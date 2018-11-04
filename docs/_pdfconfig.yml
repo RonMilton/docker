@@ -43,7 +43,7 @@ exclude:
 
 destination: ../build/_pdf
 
-collections_dir: content
+# collections_dir: content
 
 collections:
   ditamaps:

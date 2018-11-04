@@ -25,7 +25,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-collections_dir: content
+# collections_dir: content
 
 collections:
   ditamaps:
