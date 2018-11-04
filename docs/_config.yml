@@ -44,7 +44,7 @@ defaults:
       type: 'latest'
     values:
       layout: 'page'
-
+include: [_sass, _layouts, assets]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
