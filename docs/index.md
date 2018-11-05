@@ -6,5 +6,5 @@ layout: home
 title: Project
 ---
 
-{{ site.data.project.project-title }} serves a static website and generates PDF files from single-sourced Markdown files. 
+{{ site.data.project.project-title }} serves a website and generates PDF files from single-sourced Markdown files. 
  
