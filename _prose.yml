@@ -4,7 +4,6 @@ prose:
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'media'
   ignore:
-    - index.md
     - _config.yml
     - _pdfconfig.yml
     - /_layouts
