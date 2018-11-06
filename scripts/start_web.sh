@@ -1,12 +1,15 @@
-#!/bin/bash
+#!/bin/sh
 
-
-# echo "Installing dita-ot plugins..."
-# cp -R ./project/dita/plugins/* /tmp/dita-ot/plugins/ && dita --install
+touch ~/.bashrc
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
+echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc 
 
 echo "Installing Ruby dependencies..."
 cd docs
 gem install jekyll bundler --no-ri --no-rdoc
+bundle config build.nokogiri --use-system-libraries
 
 echo "Serving Jekyll website..."
 bundle install --path ../../build/vendor/bundle

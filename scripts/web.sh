@@ -15,5 +15,5 @@ docker run \
 -i \
 --rm \
 --workdir /var/code \
---entrypoint /bin/bash \
+--entrypoint /bin/sh \
 project/agent /var/code/scripts/start_web.sh
