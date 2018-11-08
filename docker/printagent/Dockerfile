@@ -1,4 +1,4 @@
-FROM jruby:9.2.0.0
+FROM jekyll/jekyll
 
 ENV OT_VERSION 3.1.2
 ENV DITA_HOME /tmp/dita-ot
@@ -7,9 +7,7 @@ ENV PATH $DITA_HOME/bin:$PATH
 
 LABEL ot-version ${OT_VERSION}
 
-RUN apt-get update \
-    && apt-get install -y git make gcc g++ openjdk-8-jdk-headless fonts-liberation \
-    && mkdir $DITA_HOME \
+RUN mkdir $DITA_HOME \
     && cd $DITA_HOME \
     && wget -c https://github.com/dita-ot/dita-ot/releases/download/${OT_VERSION}/dita-ot-${OT_VERSION}.zip \
     && unzip dita-ot-${OT_VERSION}.zip \

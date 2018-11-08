@@ -16,7 +16,7 @@
 title: Project
 email: support@project.com
 description: A technical communication.
-baseurl: '' 
+baseurl: '/project' 
 url: '' 
 
 # Build settings
