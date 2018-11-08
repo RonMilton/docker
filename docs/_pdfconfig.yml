@@ -23,7 +23,7 @@ url: ''
 markdown: kramdown
 kramdown:
   smart_quotes: ['apos', 'apos', 'quot', 'quot']
-  typographic_symbols: { ndash: -- }
+  typographic_symbols: { ndash: -- , hellip: ...}
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

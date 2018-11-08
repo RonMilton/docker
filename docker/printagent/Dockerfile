@@ -7,7 +7,8 @@ ENV PATH $DITA_HOME/bin:$PATH
 
 LABEL ot-version ${OT_VERSION}
 
-RUN mkdir $DITA_HOME \
+RUN apk update && apk upgrade && apk --update add ttf-liberation openjdk8 \
+    && mkdir $DITA_HOME \
     && cd $DITA_HOME \
     && wget -c https://github.com/dita-ot/dita-ot/releases/download/${OT_VERSION}/dita-ot-${OT_VERSION}.zip \
     && unzip dita-ot-${OT_VERSION}.zip \

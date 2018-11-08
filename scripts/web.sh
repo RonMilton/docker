@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build the docker image
-docker build --rm -t project/agent:latest -f docker/webagent/Dockerfile .
+# docker build --rm -t project/agent:latest -f docker/webagent/Dockerfile .
 
 # Run the container and run the jekyll server for development.
 docker run \
@@ -16,4 +16,4 @@ docker run \
 --rm \
 --workdir /var/code \
 --entrypoint /bin/sh \
-project/agent /var/code/scripts/start_web.sh
+jekyll/jekyll /var/code/scripts/start_web.sh
