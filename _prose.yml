@@ -1,0 +1,11 @@
+prose:
+  rooturl: 'docs/_latest'
+  siteurl: 'http://ronmilton.github.io/project/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'media'
+  ignore:
+    - _config.yml
+    - _pdfconfig.yml
+    - /_layouts
+    - /_includes
+    - /_sass
