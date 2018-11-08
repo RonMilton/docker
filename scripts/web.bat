@@ -2,10 +2,11 @@
 @ECHO OFF
 
 REM Build the docker image
-docker build --rm -t project/agent:latest -f docker/webagent/Dockerfile .
+REM docker build --rm -t project/agent:latest -f docker/webagent/Dockerfile .
 
 REM Run the container and run the jekyll server for development.
 docker run ^
+--name project ^
 -v %cd%:/var/code ^
 --dns=10.255.255.254 ^
 --dns=8.8.8.8 ^
@@ -16,4 +17,4 @@ docker run ^
 --rm ^
 --workdir /var/code ^
 --entrypoint /bin/bash ^
-project/agent /var/code/scripts/start_web.sh
+jekyll/jekyll /var/code/scripts/start_web.sh

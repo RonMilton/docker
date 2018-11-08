@@ -9,5 +9,5 @@ docker run ^
 -i ^
 --rm ^
 --workdir /var/code ^
---entrypoint /bin/bash ^
+--entrypoint /var/code/scripts/print_project.sh ^
 project/agent /var/code/docs/scripts/print_project.sh
