@@ -16,6 +16,6 @@ Jekyll will actually create a website for print production, as well, using a ded
 
 **Editing**
 
-[Prose.io](http://prose.io) provides a minimalist online editor that provides a pleasant editing experience.
+[Prose.io](http://prose.io) provides a minimalist online editor that provides a pleasant editing experience. GitHub's online editor works, too, of course.
 
 
