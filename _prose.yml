@@ -1,5 +1,5 @@
 prose:
-  rooturl: 'docs/_latest'
+  rooturl: 'docs'
   siteurl: 'http://ronmilton.github.io/project/'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'media'
