@@ -17,7 +17,7 @@ title: Project
 email: ron@ronmilton.com
 description: Project by RonMilton
 baseurl: "/project"
-url: ""
+url: "http://ronmilton.github.io/project"
 github_username:  ronmilton
 
 # Build settings
