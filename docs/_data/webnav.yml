@@ -12,9 +12,9 @@ left_toc:
 - title: Introduction
   subitems: 
      - title: Overview
-       subitems:
-         - title: Overview
-           url: /project/intro/overview.html
+       url: /project/intro/overview.html
+     - title: DITA Overview
+       url: /project/intro/dita/
 - title: Print
   subitems:
      - title: Overview
