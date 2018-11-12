@@ -1,4 +1,3 @@
-
 ---
 ---
 # DITA and the Open Toolkit
