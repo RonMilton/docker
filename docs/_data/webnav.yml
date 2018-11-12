@@ -13,6 +13,8 @@ left_toc:
   subitems: 
      - title: Overview
        url: /project/intro/overview.html
+     - title: DITA Overview
+       url: /project/intro/dita/
 - title: Print
   subitems:
      - title: Overview
