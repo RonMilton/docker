@@ -12,6 +12,8 @@ phone: 970-555-1212
 toll-free: 800-555-1212
 support-email: support@project.org
 
+prose-base: https://prose.io/#RonMilton/project/tree/draft/docs
+
 product-name: Product
 current-version: 1.0
 

@@ -2,7 +2,7 @@
 ---
 # Overview
 
-{{site.data.project.project-name}} is an end-to-end documentation solution powered by a completely free tooolchain.  
+{{site.data.project.project-title}} is an end-to-end documentation solution powered by a completely free tooolchain.  
 
 **Web**
 
@@ -17,5 +17,3 @@ Jekyll will actually create a website for print production, as well, using a ded
 **Editing**
 
 [Prose.io](http://prose.io) provides a minimalist online editor that provides a pleasant editing experience. GitHub's online editor works, too, of course.
-
-
