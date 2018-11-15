@@ -4,4 +4,4 @@
 
 Web deliverable information.
 
-[edit test]({{site.data.project.prose-base}}{{page.url}})
+[edit test]({{site.data.project.prose-base}}{{page.path}}{{page.name}})
