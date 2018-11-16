@@ -2,8 +2,7 @@
 layout: default
 ---
 <article class="post">
-    [edit page]({{site.data.project.prose-base}}{{page.path}}{{page.name}})
-    {: #editlink}
+    <a id="editlink" href="{{site.data.project.prose-base}}{{page.path}}{{page.name}}">edit page</a>
     {%- assign titlefrag = content | split: "</h" | first -%}
     {%- assign headingcheck = titlefrag | truncate: 2, "" -%}
     <header class="post-header">
